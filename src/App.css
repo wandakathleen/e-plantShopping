@@ -1,0 +1,524 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f2f5f3;
+  color: #1e293b;
+  line-height: 1.5;
+}
+
+/* --------------------------------------------------------
+Landing Page (Structured Heritage Nursery Storefront)
+-------------------------------------------------------- */
+.landing-page {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  background-image:
+    linear-gradient(rgba(17, 34, 25, 0.78), rgba(17, 34, 25, 0.78)),
+    url("https://images.unsplash.com/photo-1470058869958-2a77ade41c02?auto=format&fit=crop&w=1920&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 16px;
+}
+
+.landing-content {
+  max-width: 780px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #1f2937;
+  padding: 38px 42px;
+  border: 3px solid #1b4332;
+  border-radius: 4px;
+  box-shadow: 7px 7px 0px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.landing-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: #1b4332;
+  background-color: #e8f5e9;
+  border: 1px solid #81c784;
+  padding: 4px 14px;
+  border-radius: 2px;
+  margin-bottom: 14px;
+}
+
+.landing-title {
+  font-size: 38px;
+  font-weight: 800;
+  color: #1b4332;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.landing-tagline {
+  font-size: 16px;
+  color: #2d6a4f;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 16px;
+}
+
+.landing-divider {
+  width: 70px;
+  height: 3px;
+  background-color: #2d6a4f;
+  margin: 0 auto 20px auto;
+}
+
+/* --------------------------------------------------------
+About Us Section (Editorial Botanical Styling)
+-------------------------------------------------------- */
+.about-us-container {
+  text-align: left;
+  background-color: #f8faf9;
+  border: 1px solid #d1d5db;
+  border-left: 4px solid #2d6a4f;
+  padding: 20px 22px;
+  margin-bottom: 22px;
+}
+
+.about-us-heading {
+  font-size: 17px;
+  font-weight: bold;
+  color: #1b4332;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.about-us-text {
+  font-size: 13.5px;
+  color: #334155;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.about-us-motto {
+  font-size: 13px;
+  font-weight: bold;
+  color: #1b4332;
+  padding-top: 8px;
+  border-top: 1px dashed #cbd5e1;
+  font-style: italic;
+}
+
+/* --------------------------------------------------------
+Three-Item Feature Strip
+-------------------------------------------------------- */
+.landing-features {
+  display: flex;
+  justify-content: space-around;
+  gap: 12px;
+  margin-bottom: 26px;
+  flex-wrap: wrap;
+}
+
+.landing-feature-item {
+  flex: 1;
+  min-width: 140px;
+  background-color: #f1f5f3;
+  border: 1px solid #cbd5e1;
+  padding: 10px 8px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.feature-icon {
+  font-size: 16px;
+}
+
+.feature-label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #1b4332;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* --------------------------------------------------------
+Tactile Call to Action Button
+-------------------------------------------------------- */
+.landing-cta-wrap {
+  margin-top: 6px;
+}
+
+.get-started-btn {
+  background-color: #1b4332;
+  color: #ffffff;
+  padding: 15px 48px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid #0f291e;
+  border-radius: 3px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  box-shadow: 4px 4px 0px #0f291e;
+  transition: all 0.08s ease-in-out;
+}
+
+.get-started-btn:hover {
+  background-color: #2d6a4f;
+  transform: translate(-1px, -1px);
+  box-shadow: 5px 5px 0px #0f291e;
+}
+
+.get-started-btn:active {
+  transform: translate(3px, 3px);
+  box-shadow: 1px 1px 0px #0f291e;
+}
+
+/* --------------------------------------------------------
+Top Navigation Bar
+-------------------------------------------------------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1b4332;
+  color: #ffffff;
+  padding: 14px 28px;
+  border-bottom: 3px solid #40916c;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.brand-leaf-icon {
+  font-size: 26px;
+}
+
+.brand-heading {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+  color: #ffffff;
+}
+
+.brand-subtext {
+  font-size: 11px;
+  color: #b7e4c7;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: block;
+}
+
+.nav-links {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.nav-link-btn {
+  background: transparent;
+  border: 1px solid transparent;
+  color: #e2e8f0;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 7px 14px;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.nav-link-btn:hover,
+.nav-link-btn.active {
+  color: #ffffff;
+  background-color: #2d6a4f;
+  border-color: #40916c;
+}
+
+.cart-icon-container {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 6px 10px;
+  background-color: #2d6a4f;
+  border: 1px solid #40916c;
+  border-radius: 3px;
+}
+
+.cart-icon-container:hover {
+  background-color: #40916c;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #dc2626;
+  color: #ffffff;
+  border-radius: 3px;
+  padding: 2px 6px;
+  font-size: 11px;
+  font-weight: bold;
+  border: 1px solid #ffffff;
+  min-width: 18px;
+  text-align: center;
+}
+
+/* --------------------------------------------------------
+Catalog Page Layout
+-------------------------------------------------------- */
+.catalog-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 28px 18px 60px 18px;
+}
+
+.catalog-header {
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-left: 5px solid #2d6a4f;
+  padding: 20px 24px;
+  margin-bottom: 36px;
+  border-radius: 3px;
+}
+
+.catalog-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #1b4332;
+  margin-bottom: 6px;
+}
+
+.catalog-subtitle {
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.5;
+}
+
+.category-block {
+  margin-bottom: 46px;
+}
+
+/* --------------------------------------------------------
+Unboxed, Typographic Category Headers
+-------------------------------------------------------- */
+.category-header-wrap {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #2d6a4f;
+  padding: 0 0 10px 0;
+  margin-bottom: 20px;
+}
+
+.category-title {
+  font-size: 23px;
+  font-weight: 800;
+  color: #1b4332;
+  letter-spacing: -0.2px;
+}
+
+.category-count {
+  font-size: 12px;
+  font-weight: bold;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.plant-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* --------------------------------------------------------
+Plant Cards (Structured Box Model)
+-------------------------------------------------------- */
+.plant-card {
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.plant-card:hover {
+  border-color: #2d6a4f;
+}
+
+.plant-card-media {
+  position: relative;
+  width: 100%;
+  height: 190px;
+  background-color: #e2e8f0;
+  border-bottom: 1px solid #cbd5e1;
+  overflow: hidden;
+}
+
+.plant-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.plant-price-pill {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background-color: #1b4332;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 3px 8px;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+}
+
+.plant-card-body {
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  gap: 12px;
+}
+
+.plant-name {
+  font-size: 17px;
+  font-weight: bold;
+  color: #1b4332;
+  margin-bottom: 6px;
+}
+
+.plant-description {
+  font-size: 13px;
+  line-height: 1.45;
+  color: #475569;
+}
+
+.btn-add-cart {
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 3px;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.btn-add-cart.active {
+  background-color: #2d6a4f;
+  color: #ffffff;
+  border-color: #1b4332;
+}
+
+.btn-add-cart.active:hover {
+  background-color: #1b4332;
+}
+
+.btn-add-cart.disabled {
+  background-color: #e2e8f0;
+  color: #64748b;
+  border-color: #cbd5e1;
+  cursor: not-allowed;
+}
+
+/* --------------------------------------------------------
+Shopping Cart UI
+-------------------------------------------------------- */
+.cart-item-card {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 14px 18px;
+  border-radius: 3px;
+  margin-bottom: 12px;
+  border: 1px solid #cbd5e1;
+  gap: 16px;
+}
+
+.cart-item-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border: 1px solid #cbd5e1;
+  border-radius: 2px;
+}
+
+.qty-control {
+  display: flex;
+  align-items: center;
+  border: 1px solid #cbd5e1;
+  border-radius: 2px;
+  background-color: #f8fafc;
+}
+
+.qty-btn {
+  width: 32px;
+  height: 32px;
+  background-color: #ffffff;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  color: #1e293b;
+  cursor: pointer;
+}
+
+.qty-btn:hover {
+  background-color: #e2e8f0;
+}
+
+.qty-value {
+  font-size: 14px;
+  font-weight: bold;
+  min-width: 30px;
+  text-align: center;
+  border-left: 1px solid #cbd5e1;
+  border-right: 1px solid #cbd5e1;
+  line-height: 32px;
+}
+
+.btn-delete {
+  padding: 8px 14px;
+  background-color: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #f87171;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.btn-delete:hover {
+  background-color: #dc2626;
+  color: #ffffff;
+}
